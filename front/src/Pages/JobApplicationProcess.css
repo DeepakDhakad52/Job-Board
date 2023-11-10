@@ -1,0 +1,74 @@
+.Job_application_page_main_container {
+  height: auto;
+}
+.Job_application_page_main_container > h2 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.job_application_con {
+  border: 1px solid green;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.job_application_con > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Header_table_of_status {
+  background-color: royalblue;
+  padding: 10px;
+}
+.Header_table_of_status > p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Itme_box_status {
+  border: 1px solid #ccc;
+  background-color: #f2f0f0;
+}
+.Itme_box_status > p {
+  padding: 10px;
+  font-weight: bold;
+}
+.status_green {
+  color: green;
+}
+.status_red {
+  color: red;
+}
+.Itme_box_status button {
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 3px 10px;
+}
+
+@media (max-width: 1180px) {
+  .Job_application_page_main_container {
+    width: 100%;
+  }
+  .job_application_con {
+    width: 90%;
+  }
+  .Itme_box_status {
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .Itme_box_status p {
+    font-size: 10px;
+  }
+
+  .Itme_box_status button {
+    font-size: 10px;
+  }
+  .Header_table_of_status p {
+    font-size: 10px;
+  }
+  .Itme_box_status {
+    align-items: center;
+  }
+}

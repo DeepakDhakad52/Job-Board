@@ -1,0 +1,138 @@
+.home_banner {
+  background-color: black;
+}
+.desktop_img {
+  width: 100%;
+  opacity: 0.6;
+}
+.mobile_img {
+  display: none;
+}
+.home_banner > div {
+  position: absolute;
+  top: 200px;
+
+  left: 0;
+  right: 0;
+  color: white;
+  z-index: 1;
+}
+.home_banner h1 {
+  font-size: 50px;
+}
+.home_banner p {
+  margin-bottom: 20px;
+}
+.home_banner > div > div {
+  margin-top: 30px;
+}
+.home_banner input {
+  width: 30%;
+  height: 50px;
+  opacity: 0.5;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+}
+.home_banner button {
+  height: 50px;
+  padding: 0px 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(7, 155, 7);
+  color: white;
+}
+.Result_box_home {
+  border: 1px solid #ccc;
+  width: 33%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.475);
+  position: absolute;
+  z-index: 2;
+  top: 348px;
+  left: 33.5%;
+  border-top: 0px;
+}
+.Result_box_home > div {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 5px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.Result_box_home img {
+  width: 50px;
+}
+@media (max-width: 820px) {
+  .desktop_img {
+    display: none;
+  }
+  .mobile_img {
+    display: flex;
+    opacity: 0.4;
+    height: 100vh;
+    width: 100%;
+  }
+  .Result_box_home {
+    top: 407px;
+  }
+}
+@media (max-width: 667px) {
+  .desktop_img {
+    display: none;
+  }
+  .mobile_img {
+    display: flex;
+    opacity: 0.4;
+  }
+  .home_banner div {
+    top: 198px;
+  }
+  .home_banner h1 {
+    font-size: 32px;
+    width: 80%;
+    margin: auto;
+  }
+  .home_banner p {
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 0.1cm;
+  }
+  .home_banner {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .home_banner div input {
+    width: 50%;
+    opacity: 0.8;
+  }
+  .Result_box_home {
+    background-color: rgba(240, 248, 255, 0.645);
+    width: 65%;
+    left: 18%;
+    top: 430px;
+    height: 200px;
+    overflow: scroll;
+  }
+  .Result_box_home img {
+    width: 30px;
+  }
+  .Result_box_home div {
+    font-size: 10px;
+  }
+  .Result_box_home button {
+    font-size: 10px;
+    background-color: royalblue;
+    border: unset;
+    padding: 2px;
+    color: white;
+  }
+}

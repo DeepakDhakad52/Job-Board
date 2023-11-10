@@ -1,0 +1,130 @@
+.job_details_main_container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Jobdetail_header {
+  margin-bottom: 20px;
+}
+
+.Jobdetail_header:nth-child(3) {
+  margin-top: 50px;
+}
+.JobDetail_container {
+  border: 1px solid #ccc;
+  height: auto;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: left;
+}
+.Jobdetail_descriptions_inner_div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.Jobdetail_descriptions_inner_div b {
+  font-size: 13px;
+  margin-top: 1px;
+  color: grey;
+}
+.Jobdetail_roll_and_other_details {
+  margin-top: 30px;
+  line-height: 0.8cm;
+}
+.Jobdetail_roll_and_other_details .Jobdetail_roll_flex_div {
+}
+
+.Jobdetail_roll_flex_div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Jobdetails_educations {
+  margin-top: 20px;
+  width: 60%;
+}
+.Jobdetails_educations .Jobdetail_header {
+  margin-bottom: 5px;
+}
+
+.Jobdetail_header_keyskills {
+  margin-top: 30px;
+}
+.Jobdetail_key_skills_div {
+  margin-top: 20px;
+
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+.Jobdetail_key_skills_div > div {
+  border: 1px solid #aeadad;
+
+  padding: 3px 20px;
+  border-radius: 10px;
+}
+.line_jobdetails {
+  margin-top: 20px;
+}
+.jobdetails_social_media_div {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.jobdetails_social_media_div img {
+  width: 30px;
+}
+.jobDetails_about_company {
+  border: 1px solid #ccc;
+  height: auto;
+  padding: 20px;
+  border-radius: 30px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.jobdetail_header_img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.jobDetails_about_company img {
+  width: 60px;
+}
+.jobdetail_paragraph {
+  text-align: left;
+  line-height: 0.7cm;
+}
+.jobdetail_paragraph > p {
+  margin-bottom: 20px;
+}
+
+.Apply_button_jobs {
+  border: none;
+  background-color: royalblue;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+  .job_details_main_container {
+    border: 1px solid green;
+    padding: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .job_details_main_container {
+    border: 1px solid blue;
+    padding: 20px;
+  }
+  .jobdetail_paragraph p {
+  }
+}

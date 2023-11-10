@@ -1,0 +1,111 @@
+.PostJob_form_container {
+  border: 3px solid #007bff;
+  margin: auto;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0s ease-in-out;
+  opacity: 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+}
+
+.PostJob_form_container.show {
+  max-height: 100%;
+  opacity: 1;
+}
+
+.PostJob_form_container input[type="text"],
+.PostJob_form_container input[type="number"],
+.PostJob_form_container select,
+.PostJob_form_container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.JobDescription_inpu_div {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 20px 10px;
+  margin-bottom: 16px;
+
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.jobdescription_extra_input_div {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.jobdescription_extra_input_div > button {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  font-size: 20px;
+  padding: 8px 15px;
+  margin-top: -14px;
+  border: 1px solid #ccc;
+  border-left: none;
+  color: red;
+}
+.jobdescription_extra_input_div input {
+  border-radius: unset;
+}
+.JobDescription_inpu_div > button {
+  background-color: #007bff;
+  padding: 5px 20px;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 4px;
+}
+
+.about_my_conpany_con {
+}
+.add_post_btn {
+  margin: 40px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 40px;
+}
+.Industry_type_div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 0px;
+}
+.Indestry_type_other_div_flex {
+  display: grid;
+  grid-template-columns: repeat(2, 17.5% 80%);
+  align-items: center;
+  gap: 20px;
+}
+.Indestry_type_other_div_flex > label {
+  margin-bottom: 14px;
+}
+.jobpostpage_second_con {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1180px) {
+}
+@media (max-width: 480px) {
+  .PostJob_form_container {
+    max-width: 90%;
+  }
+}
